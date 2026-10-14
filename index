@@ -1,14 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Judul Tab -->
+
   <title>SIKTA PGRI Pontianak</title>
 
-  <!-- Logo Tab menggunakan Foto Profil GitHub -->
-  <link rel="icon" type="image/png" href="https://github.com/pgri-pontianak.png">
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://github.com/pgri-pontianak.png"
+  >
 
   <style>
     * {
@@ -17,28 +20,48 @@
       padding: 0;
     }
 
-    html, body {
+    html,
+    body {
       width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background-color: #f4f6f9;
+      min-height: 100%;
+      background: #f4f6f9;
+      font-family: Arial, sans-serif;
     }
 
     .app-frame {
-      width: 100vw;
-      height: 100vh;
-      border: none;
       display: block;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      border: none;
+      background: #fff;
+    }
+
+    .loading {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      z-index: -1;
+      color: #475569;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
+  <div class="loading">
+    Memuat aplikasi SIKTA...
+  </div>
 
-  <iframe 
-    class="app-frame" 
-    src="https://script.google.com/macros/s/AKfycbx1cRHTNRvuZcv9mThF2CcS0Mz92WIi8UCFSaQihv9fX_-3CX-Pts1OmV-iWKDRujLSnQ/exec" 
-    allowfullscreen>
-  </iframe>
-
+  <iframe
+    class="app-frame"
+    src="https://script.google.com/macros/s/AKfycbx1cRHTNRvuZcv9mThF2CcS0Mz92WIi8UCFSaQihv9fX_-3CX-Pts1OmV-iWKDRujLSnQ/exec"
+    title="Aplikasi SIKTA PGRI Pontianak"
+    allow="fullscreen"
+    referrerpolicy="strict-origin-when-cross-origin"
+  ></iframe>
 </body>
 </html>
